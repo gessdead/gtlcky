@@ -1,0 +1,34 @@
+.page-header {
+  background-color: fade(@bg-colors, 70%);
+  height: 50px;
+}
+
+.page-header__inner {
+  position: relative;
+}
+
+.page-header__burger {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.page-header__burger-link {
+  text-decoration: none;
+  display: flex;
+  cursor: pointer;
+  width: 28px;
+  min-height: 20px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+  span {
+    width: 28px;
+    height: 4px;
+    background-color: @white;
+    margin-bottom: 4px;
+    display: block;
+  }
+}

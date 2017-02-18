@@ -1,17 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/style.min.css">
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 
 <header class="page-header">
     <div class="page-header__inner">
         <div class="page-header__logo"></div>
-        <div class="page-header__burger"></div>
-        <nav class="menu-mobile">
+        <div class="page-header__burger">
+            <a href="javascript:;" class="page-header__burger-link">
+                <span></span><span></span><span></span>
+            </a>
+        </div>
+        <nav class="menu-mobile is-mobile">
             <ul class="menu-mobile__list">
                 <li class="menu-mobile__item">
                     <a class="menu-mobile__link" href="">Портфолио</a>
@@ -25,7 +30,7 @@
             </ul>
         </nav>
 
-        <nav class="menu-desktop">
+        <nav class="menu-desktop" style="display: none;">
             <ul class="menu-desktop__list">
                 <li class="menu-desktop__item">
                     <a class="menu-desktop__link" href="">Портфолио</a>
