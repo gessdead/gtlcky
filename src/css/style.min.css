@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&subset=cyrillic');
 * {
   box-sizing: border-box;
 }
@@ -29,6 +30,8 @@ li {
 .page-header {
   background-color: rgba(45, 44, 44, 0.7);
   height: 50px;
+  color: #fff;
+  font-family: 'Press Start 2P';
 }
 .page-header__inner {
   position: relative;
@@ -56,8 +59,8 @@ li {
   margin-bottom: 4px;
   display: block;
 }
-@media (min-width: 1024px) {
-  .is-mobile {
+@media (min-width: 1024px){
+  .is-mobile{
     display: none;
   }
 }
