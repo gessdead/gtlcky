@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="eng">
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width,initial-scale=1" name="viewport">
-    <title>Document</title>
+    <title>Get Lucky</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -12,9 +12,11 @@
     <div class="page-header__inner">
         <div class="page-header__logo">Gtlcky</div>
         <div class="page-header__burger">
-            <a href="javascript:;" class="page-header__burger-link">
-                <span></span><span></span><span></span>
-            </a>
+            <button type="button" class="page-header__burger-link">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
         <nav class="menu-mobile is-mobile">
             <ul class="menu-mobile__list">
@@ -48,28 +50,34 @@
 
 
 <main>
-    <div class="content__inner">
+    <div class="content__inner js-container">
         <div class="info">
             <div class="info__inner">
-                <p class="info__text"></p>
+                <p class="info__text">
+                    Press the button to get lucky
+                </p>
             </div>
         </div>
 
         <div class="action">
             <div class="action__inner">
-                <a href="" class="action__button">Get lucky</a>
+                <button type="button" class="action__button js-action-button">
+                    Get lucky
+                </button>
             </div>
+        </div>
+
+        <div class="result js-result-container">
+
         </div>
     </div>
 </main>
 
 <footer class="page-footer">
     <div class="copyright">
-        see u soon
-        <span>2K17</span>
+        see u soon <span>2K17</span>
     </div>
-    <div class="lang">рус | eng</div>
 </footer>
-
+<script src="js/main.js"></script>
 </body>
 </html>
