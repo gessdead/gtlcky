@@ -11,7 +11,7 @@ class GetLucky {
         this.actionButton = container.querySelector('.js-action-button');
         this.number = null;
         this.text = null;
-        this.className = 'block';
+        this.className = 'js-result';
         this.element = null;
         this.template = (number, text) => `
                 <div class="result">
