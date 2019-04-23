@@ -10,11 +10,13 @@ class GetLucky {
         this.container = container;
         this.actionButton = container.querySelector('.js-action-button');
         this.number = null;
-        this.fullData = null;
-        this.template = data => `
+        this.text = null;
+        this.className = 'block';
+        this.element = null;
+        this.template = (number, text) => `
                 <div class="result">
-                    <span>${data.number}</span>
-                    <span>${data.positiveText}</span>
+                    <span>${number}</span>
+                    <span>${text}</span>
                 </div>
             `;
         this.blockData = {
@@ -29,24 +31,34 @@ class GetLucky {
 
     bindEvents() {
         this.actionButton.addEventListener('click', () => {
+            this.removeBlock(this.className);
             this.renderBlock();
         });
     }
 
-    concatData(data1, data2) {
-        return Object.assign(data1, data2);
+    renderBlock() {
+        this.number = this.getRandomNumber(-100, 101);
+        this.number > 0 ?
+            this.text = this.blockData.positiveText:
+            this.text = this.blockData.negativeText;
+
+        const div = document.createElement('div');
+
+        div.className = this.className;
+        div.innerHTML = this.template(this.number, this.text);
+
+        this.container.appendChild(div);
     }
 
-    renderBlock() {
-        this.number = {number: this.getRandomNumber(-100, 100)};
-        this.fullData = this.concatData(this.blockData, this.number);
-        console.log(this.container);
-        console.log(this.template(this.fullData));
+    removeBlock(className) {
+        this.element = document.querySelector(`.${className}`);
 
-        this.container.innerHTML = this.template(this.fullData);
+        if (this.element !== null) {
+            this.element.remove();
+        }
     }
 
     getRandomNumber(max, min) {
-        return Math.floor(Math.random() * (max - min));
+        return Math.floor(Math.random() * (max - min) - max);
     }
 }
