@@ -13,7 +13,7 @@
     "autoprefixer": "^6.3.3",
     "browser-sync": "^2.12.8",
     "css-mqpacker": "^4.0.1",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-cleancss": "^0.2.2",
     "gulp-connect": "^4.0.0",
     "gulp-gh-pages": "^0.5.4",
