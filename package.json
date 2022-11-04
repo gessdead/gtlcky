@@ -17,7 +17,7 @@
     "gulp-cleancss": "^0.2.2",
     "gulp-connect": "^4.0.0",
     "gulp-gh-pages": "^0.5.4",
-    "gulp-htmlhint": "^0.3.1",
+    "gulp-htmlhint": "^4.0.2",
     "gulp-jsmin": "^0.1.5",
     "gulp-less": "^3.0.5",
     "gulp-livereload": "^3.8.1",
